@@ -1,0 +1,132 @@
+
+.home
+    .grid.wide
+        .row 
+            .col.l-3
+                .home__wrap
+                    h1.home_title Any restaurant, any meal
+                    form(action="").form__group
+                        input(type="text", placeholder="Type your search").form__control
+                        button(type="submit").btn.btn__search Search
+.content
+    section.section-content
+        .grid.wide
+            .row
+                .col.l-8
+                    .section__header
+                        p.content__sub-header popular restaurant in town
+                        h2.content__header Discover the best cuisine              
+                .col.l-2.l-o-2
+                    .discover__icon-control
+                        span.ti-arrow-left.icon__discover.icon__control--left
+                        span.ti-arrow-right.icon__discover.icon__control--right
+            .row 
+                .col.l-2-4 
+                    .discover 
+                        .discover__img 
+                            img(src="./assets/img/discover/h4-img-2.jpg", alt="Beverages")
+                        .discover__title Chinese food
+                .col.l-2-4 
+                    .discover 
+                        .discover__img 
+                            img(src="./assets/img/discover/h4-img-3.jpg", alt="")
+                        .discover__title Vegetarian food
+                .col.l-2-4 
+                    .discover 
+                        .discover__img 
+                            img(src="./assets/img/discover/h4-img-4.jpg", alt="")
+                        .discover__title Italian food
+                .col.l-2-4 
+                    .discover 
+                        .discover__img 
+                            img(src="./assets/img/discover/h4-img-5.jpg", alt="")
+                        .discover__title Beverages
+                .col.l-2-4 
+                    .discover 
+                        .discover__img 
+                            img(src="./assets/img/discover/h4-img-6.jpg", alt="")
+                        .discover__title Mexican food
+    section.section-content
+        .grid.wide
+            .row
+                .col.l-7
+                    .award__img 
+                        img(src="./assets/img/award.jpg", alt="Award")
+                        img(src="./assets/img/h4-img-8.png", alt="Icon").award__img-icon
+                .col.l-5
+                    .section__award
+                        p.award__number 01.
+                        h2.award__header Award-winning app for delivery         
+                        p.award__description Vivamus lacinia tempus rutrum nulla velit lupus maximus sed nulla quis, gravida sed tellus nibh metus euismod risus curabitur mauris.
+                        a(href="#").award__link--more Read More 
+                            span.icon-more.ti-arrow-right
+    section.section-content
+        .grid.wide
+            .row
+                .section__header
+                    h2.content__header Popular right now
+            
+            - 
+                const food = [
+                      {
+                        title: 'The King Caffe',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-9.jpg"
+                      },
+                      {
+                        title: 'Le Nonne Restaurant',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-10.jpg"
+                      },
+                      {
+                        title: 'AGY Pasta Away',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-11.jpg"
+                      },
+                      {
+                        title: 'Go Fresh & Healthy',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-12.jpg"
+                      },
+                      {
+                        title: 'Pizza Restaurant',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-13.jpg"
+                      },
+                      {
+                        title: 'Pancakes Recipe',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-14.jpg"
+                      },
+                      {
+                        title: 'Ice Cream Flavors',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-15.jpg"
+                      },
+                      {
+                        title: 'Delicious Donuts',
+                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+                        url: "./assets/img/popular/h4-img-16.jpg"
+                      }
+                ]
+            .row 
+                each item in food
+                    .col.l-3
+                        .popular 
+                            .popular__img 
+                                img(src=item.url, alt=item.title)
+                            .popular__title= item.title
+                            .popular__description= item.des
+    section.section-content
+        .grid.wide
+            .row
+                .col.l-6
+                    .section__header
+                        h2.content__header Hi! Honey... We don't cook today.
+                        p.content__sub-header Get the app and choose from 10,000+ restaurants in 70+ cities.
+                        .app-download
+                            a(href="http://").app__download-link
+                                img(src="./assets/img/app/apple.jpg", alt="App Store").app__download-img
+                            a(href="http://").app__download-link
+                                img(src="./assets/img/app/google.jpg", alt="Google Play").app__download-img
+

@@ -1,0 +1,18 @@
+- const navbarList = ['Home', 'Page', 'Portfolio', 'Blog', 'Shop']
+nav.navbar
+  .navbar__logo
+    img.navbar__logo-img(src='./assets/img/logo-dark-img-1.png' alt='Logo')
+  ul.navbar__menu 
+    each item, value in navbarList 
+      li.navbar__menu-item
+        a.navbar__menu-item-link
+          p.navbar__title= item
+  ul.navbar__sub
+    li.navbar__sub-icon 
+      span.ti-search.navbar__sub-icon--search
+      span.navbar__sub-title Search
+    li.navbar__sub-icon
+      span.navbar__sub--separate 
+        span.navbar__sub--separate--1
+        span.navbar__sub--separate--2
+        span.navbar__sub--separate--3

@@ -1,0 +1,190 @@
+.home {
+  height: 100vh;
+  position: relative;
+  background: url(../../assets/img/h4-rev-image2.png) no-repeat center right/43%,
+    url(../../assets/img/h4-rev-img-1.jpg) no-repeat bottom center/cover;
+  .home__wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 526px;
+  }
+  .home_title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    &::before {
+      content: 'explore the whole cities';
+
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      line-height: 1;
+    }
+  }
+  .form__group {
+    .form__control {
+      width: 100%;
+      padding: 18px 40px;
+      margin-top: 18px;
+
+      color: $text-color;
+
+      font-size: 1.6rem;
+      font-weight: 700;
+
+      border: #ccc solid 1px;
+      &:focus {
+        outline: none;
+
+        color: $black-color;
+      }
+    }
+    .btn__search {
+      margin-top: 36px;
+    }
+  }
+}
+
+//- Discover
+
+.discover__icon-control {
+  display: inline-flex;
+  width: 142px;
+  justify-content: space-between;
+  overflow: hidden;
+
+  cursor: pointer;
+  .icon__discover {
+    color: #acacac;
+
+    font-size: 4rem;
+    line-height: 66px;
+    font-weight: 400;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: all ease-in-out 0.2s;
+  }
+  .icon__control--left {
+    &:hover {
+      transform: translateX(-30px);
+    }
+  }
+  .icon__control--right {
+    &:hover {
+      transform: translateX(30px);
+    }
+  }
+}
+.discover {
+  .discover__img {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: all ease-in-out 0.3s;
+      transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1) translateX(6px);
+      }
+    }
+    margin-top: 60px;
+    margin-bottom: 38px;
+  }
+  .discover__title {
+    color: #1d1d1f;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+}
+
+//- Award
+.award__img {
+  position: relative;
+  img {
+    width: 90%;
+  }
+  .award__img-icon {
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: -5%;
+    left: calc(100%-50px);
+    width: 184px;
+    height: 184px;
+  }
+}
+
+.section__award {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  .award__number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .award__header {
+    color: #1d1d1f;
+
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .award__description {
+    margin: 24px 0;
+
+    color: #4c414c;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .award__link--more {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1d1d1f;
+
+    .icon-more {
+      padding-left: 16px;
+    }
+  }
+}
+
+.popular {
+  .popular__img {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transform: scale(1.1);
+    }
+    margin-top: 60px;
+    margin-bottom: 38px;
+  }
+  .popular__title {
+    color: #1d1d1f;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .popular__description {
+    margin-top: 18px;
+
+    color: #4c414c;
+
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}

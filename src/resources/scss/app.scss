@@ -1,0 +1,16 @@
+// Base
+@import './base/global';
+@import './base/mixins';
+@import './base/grid_lib';
+@import './base/variables';
+@import './base/placeholders';
+
+// Components
+@import './components/components';
+
+// Page
+@import './pages/home';
+
+// Partials
+@import './partials/header';
+@import './partials/footer';
