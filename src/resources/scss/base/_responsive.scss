@@ -1,0 +1,20 @@
+/* 
+PC >=1024px
+740px <= Table < 1024px
+Mobile < 740px 
+*/
+/* PC */
+@media (min-width: 64em) {
+}
+/* Table */
+@media (max-width: 63.9375em) {
+  .section__award {
+    margin-top: 32px;
+  }
+}
+/* Table */
+@media (max-width: 63.9375em) and (min-width: 46.25em) {
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
+}

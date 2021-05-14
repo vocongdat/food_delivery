@@ -16,14 +16,14 @@
 
   background-color: transparent;
 
-  .navbar__logo {
+  &__logo {
     .navbar__logo-img {
       width: 94px;
     }
     padding: 0 24px;
   }
 
-  .navbar__menu {
+  &__menu {
     display: inline-flex;
     padding-left: 0;
 
@@ -57,7 +57,7 @@
       }
     }
   }
-  .navbar__sub {
+  &__sub {
     display: inline-flex;
     background-color: transparent;
     height: $height-navbar;
@@ -67,7 +67,7 @@
       display: flex;
       align-items: center;
       padding: 0 24px;
-      .navbar__sub-icon--search {
+      &--search {
       }
       .navbar__sub-title {
         margin-left: 14px;
@@ -85,7 +85,7 @@
         width: 40px;
         height: 24px;
 
-        .navbar__sub--separate--1 {
+        &--1 {
           position: absolute;
           top: 6px;
           right: 0;
@@ -95,7 +95,7 @@
 
           background-color: $black-color;
         }
-        .navbar__sub--separate--2 {
+        &--2 {
           position: absolute;
           top: 12px;
           right: 0;
@@ -105,7 +105,7 @@
 
           background-color: $black-color;
         }
-        .navbar__sub--separate--3 {
+        &--3 {
           position: absolute;
           top: 18px;
           right: 0;

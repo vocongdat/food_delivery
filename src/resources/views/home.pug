@@ -6,54 +6,185 @@
                 .home__wrap
                     h1.home_title Any restaurant, any meal
                     form(action="").form__group
-                        input(type="text", placeholder="Type your search").form__control
+                        input(type="text", placeholder="Type your search" required).form__control
                         button(type="submit").btn.btn__search Search
+-
+    const backgroundImg = [
+        {
+            url: 'h4-rev-inner-img-3.png',
+            alt: 'rev-inner-3'
+        },
+        {
+            url: 'h4-rev-inner-img-4.png',
+            alt: 'rev-inner-4'
+        },
+        {
+            url: 'h4-rev-inner-img-5.png',
+            alt: 'rev-inner-5'
+        },
+        {
+            url: 'h4-rev-inner-img-7.png',
+            alt: 'rev-inner-7'
+        },
+        {
+            url: 'h4-rev-inner-img-8.png',
+            alt: 'rev-inner-8'
+        },
+        {
+            url: 'h4-rev-inner-img-9.png',
+            alt: 'rev-inner-9'
+        }
+    ]
+
+-
+    const service = [
+        {
+            icon: 'ti-video-clapper',
+            title: 'Capitalize on Custom',
+            description: 'Morbi posuere varius eros, sed convallis condimentum pretium non sed metus.'
+        },
+        {
+            icon: 'ti-layout-tab-window',
+            title: 'eCommerce Trends',
+            description: 'Quisque vitae ornare libero varius metus sollicitudin a tortor pharetra amet nisl.'
+        },
+        {
+            icon: 'ti-layout-slider',
+            title: 'On-Demand Platforms',
+            description: 'Donec pretium commodo ante commodo sem volutpat eget vestibulum id mollis.'
+        }
+        
+    ]
+
+-
+    const discover = [
+        {
+            url: 'h4-img-2.jpg',
+            title: 'Chinese food'
+            
+        },
+        {
+            url: 'h4-img-3.jpg',
+            title: 'Vegetarian food'
+           
+        },
+        {
+            url: 'h4-img-4.jpg',
+            title: 'Italian food'
+            
+        },
+        {
+            url: 'h4-img-5.jpg',
+            title: 'Beverages'
+           
+        },
+        {
+            url: 'h4-img-6.jpg',
+            title: 'Mexican food'
+           
+        }
+        
+    ]
+
+- 
+    const food = [
+            {
+            title: 'The King Caffe',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-9.jpg"
+            },
+            {
+            title: 'Le Nonne Restaurant',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-10.jpg"
+            },
+            {
+            title: 'AGY Pasta Away',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-11.jpg"
+            },
+            {
+            title: 'Go Fresh & Healthy',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-12.jpg"
+            },
+            {
+            title: 'Pizza Restaurant',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-13.jpg"
+            },
+            {
+            title: 'Pancakes Recipe',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-14.jpg"
+            },
+            {
+            title: 'Ice Cream Flavors',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-15.jpg"
+            },
+            {
+            title: 'Delicious Donuts',
+            des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
+            url: "h4-img-16.jpg"
+            }
+    ]
+
+-
+    const blogs = [
+        {
+            url: 'blog-1.jpg',
+            title: 'Our master chef',
+            description: 'Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.',
+            date: 'AUGUST 27, 2021'
+        },
+        {
+            url: 'blog-2.jpg',
+            title: 'Preparing food',
+            description: 'Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.',
+            date: 'AUGUST 27, 2021'
+        },
+        {
+            url: 'blog-3.jpg',
+            title: 'Serve more people',
+            description: 'Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.',
+            date: 'AUGUST 27, 2021'
+        }
+        
+    ]
+
+
 .content
     section.section-content
         .grid.wide
             .row
-                .col.l-8
+                .col.l-8.m-8
                     .section__header
                         p.content__sub-header popular restaurant in town
                         h2.content__header Discover the best cuisine              
-                .col.l-2.l-o-2
+                .col.l-2.l-o-2.m-4
                     .discover__icon-control
                         span.ti-arrow-left.icon__discover.icon__control--left
                         span.ti-arrow-right.icon__discover.icon__control--right
             .row 
-                .col.l-2-4 
-                    .discover 
-                        .discover__img 
-                            img(src="./assets/img/discover/h4-img-2.jpg", alt="Beverages")
-                        .discover__title Chinese food
-                .col.l-2-4 
-                    .discover 
-                        .discover__img 
-                            img(src="./assets/img/discover/h4-img-3.jpg", alt="")
-                        .discover__title Vegetarian food
-                .col.l-2-4 
-                    .discover 
-                        .discover__img 
-                            img(src="./assets/img/discover/h4-img-4.jpg", alt="")
-                        .discover__title Italian food
-                .col.l-2-4 
-                    .discover 
-                        .discover__img 
-                            img(src="./assets/img/discover/h4-img-5.jpg", alt="")
-                        .discover__title Beverages
-                .col.l-2-4 
-                    .discover 
-                        .discover__img 
-                            img(src="./assets/img/discover/h4-img-6.jpg", alt="")
-                        .discover__title Mexican food
+                each food in discover
+                    .col.l-2-4.m-4
+                        .art-gallery
+                            .art-gallery-wrap
+                                .art-gallery__img
+                                    a(href="#") 
+                                        img(src='./assets/img/discover/' + food.url, alt= food.title)
+                                .art-gallery__body
+                                    .art-gallery__title= food.title
+                
     section.section-content
         .grid.wide
             .row
-                .col.l-7
+                .col.l-7.m-12
                     .award__img 
                         img(src="./assets/img/award.jpg", alt="Award")
                         img(src="./assets/img/h4-img-8.png", alt="Icon").award__img-icon
-                .col.l-5
+                .col.l-5.m-12
                     .section__award
                         p.award__number 01.
                         h2.award__header Award-winning app for delivery         
@@ -65,68 +196,67 @@
             .row
                 .section__header
                     h2.content__header Popular right now
-            
-            - 
-                const food = [
-                      {
-                        title: 'The King Caffe',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-9.jpg"
-                      },
-                      {
-                        title: 'Le Nonne Restaurant',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-10.jpg"
-                      },
-                      {
-                        title: 'AGY Pasta Away',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-11.jpg"
-                      },
-                      {
-                        title: 'Go Fresh & Healthy',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-12.jpg"
-                      },
-                      {
-                        title: 'Pizza Restaurant',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-13.jpg"
-                      },
-                      {
-                        title: 'Pancakes Recipe',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-14.jpg"
-                      },
-                      {
-                        title: 'Ice Cream Flavors',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-15.jpg"
-                      },
-                      {
-                        title: 'Delicious Donuts',
-                        des: 'Etiam dictum metus pulvinar vitae hendrerit quis metus',
-                        url: "./assets/img/popular/h4-img-16.jpg"
-                      }
-                ]
             .row 
                 each item in food
-                    .col.l-3
-                        .popular 
-                            .popular__img 
-                                img(src=item.url, alt=item.title)
-                            .popular__title= item.title
-                            .popular__description= item.des
+                    .col.l-3.m-6
+                        .art-gallery
+                            .art-gallery-wrap
+                                .art-gallery__img 
+                                    img(src='./assets/img/popular/' + item.url, alt= item.title)
+                                .art-gallery__body
+                                    .art-gallery__title= item.title
+                                    .art-gallery__description= item.des
+                            
+    section.section-content.section__app-download
+        .grid.wide
+            .row
+                .col.l-8
+                    .section__header
+                        h2.content__header Hi! Honey...<br> We don't cook today.
+                        p.content__sub-header Get the app and choose from 10,000+ restaurants in 70+ cities.
+                        .app-download
+                            a(href="#").app__download-link
+                                img(src="./assets/img/app/apple.jpg", alt="App Store").app__download-img
+                            a(href="#").app__download-link
+                                img(src="./assets/img/app/google.jpg", alt="Google Play").app__download-img
+        each item in backgroundImg
+            div(class= item.alt)
+                img(src='./assets/img/app/' + item.url, alt=item.alt)
     section.section-content
         .grid.wide
             .row
-                .col.l-6
-                    .section__header
-                        h2.content__header Hi! Honey... We don't cook today.
-                        p.content__sub-header Get the app and choose from 10,000+ restaurants in 70+ cities.
-                        .app-download
-                            a(href="http://").app__download-link
-                                img(src="./assets/img/app/apple.jpg", alt="App Store").app__download-img
-                            a(href="http://").app__download-link
-                                img(src="./assets/img/app/google.jpg", alt="Google Play").app__download-img
+                .col.l-7.m-12
+                    .award__img 
+                        img(src="./assets/img/h4-img-18.jpg", alt="Award")
+                        img(src="./assets/img/h4-img-19.png", alt="Icon").award__img-icon
+                .col.l-5.m-12
+                    ul.section__service
+                        each item in service
+                            li.service__wrap
+                                a(href="#")
+                                    span(class= item.icon).service__icon
+                                .service__body
+                                    a(href="#")
+                                        h4.service__title= item.title 
+                                    p.service__des= item.description
+    section.section-content
+        .grid.wide
+            .section__header
+                h2.content__header.content__blog Latest blog posts
+            .row 
+                each item in blogs
+                    .col.l-4.m-6
+                        .art-gallery
+                            .art-gallery-wrap
+                                .art-gallery__img 
+                                    a(href="#") 
+                                        img(src='./assets/img/blog/' + item.url, alt= item.title)
+                                .art-gallery__body
+                                    a(href="#")
+                                        .art-gallery__title= item.title
+                                    .art-gallery__description= item.description
+                                    a(href="#").art-gallery__link--more Read More 
+                                        span.art-gallery__icon--more.ti-arrow-right
+                            a(href="#").art-gallery__date
+                                time(datetime="2021-08-27")= item.date
 
