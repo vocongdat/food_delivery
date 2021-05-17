@@ -4,7 +4,7 @@ footer {
   background-color: #1d1d1f;
   color: #fff;
   .footer__slogan {
-    font-size: 3.8rem;
+    font-size: 4rem;
     line-height: 1.2;
     margin-bottom: 60px;
   }
@@ -86,7 +86,7 @@ footer {
       border-bottom: 1px solid #fff;
 
       color: #fff;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       font-weight: 700;
       &:focus {
         outline: none;
@@ -96,11 +96,21 @@ footer {
       }
     }
     .btn {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       background-color: transparent;
       &:hover {
         background-color: transparent;
         color: #fff;
+      }
+    }
+    .btn__subscribe {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+
+      span {
+        margin-left: 14px;
+        font-size: 2rem;
       }
     }
   }

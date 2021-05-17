@@ -11,14 +11,13 @@
   justify-content: space-between;
 
   height: $height-navbar;
-  width: 1300px;
   margin: 0 auto;
 
   background-color: transparent;
 
   &__logo {
     .navbar__logo-img {
-      width: 94px;
+      width: 96px;
     }
     padding: 0 24px;
   }
@@ -74,7 +73,11 @@
       }
       &:hover {
         background-color: $hover-color;
-        transition: all linear 0.3s;
+        transition: all ease 0.3s;
+      }
+      &:not(:first-child):hover .navbar__sub--separate--3 {
+        right: 20px;
+        transition: all ease 0.2s;
       }
 
       .navbar__sub--separate {
@@ -114,9 +117,7 @@
           height: 1px;
 
           background-color: $black-color;
-        }
-        &:hover .navbar__sub--separate--3 {
-          right: 20px;
+          transition: all ease 0.2s;
         }
       }
     }

@@ -3,8 +3,7 @@ a {
 }
 
 .section-content {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 140px;
   .content__header {
     color: #1d1d1f;
 
@@ -81,9 +80,9 @@ a {
 
       font-size: 2.4rem;
       font-weight: 700;
+      line-height: 1.2;
     }
     .art-gallery__description {
-      margin-top: 18px;
       margin-bottom: 24px;
 
       color: #4c414c;
@@ -97,7 +96,7 @@ a {
       text-decoration: none;
       color: #1d1d1f;
       .art-gallery__icon--more {
-        padding-left: 16px;
+        margin-left: 16px;
       }
     }
   }

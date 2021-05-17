@@ -1,13 +1,13 @@
 
-.home
+.home#home
     .grid.wide
-        .row 
-            .col.l-3
-                .home__wrap
-                    h1.home_title Any restaurant, any meal
-                    form(action="").form__group
-                        input(type="text", placeholder="Type your search" required).form__control
-                        button(type="submit").btn.btn__search Search
+        .home__wrap.row
+            .col.l-8.m-10
+                h1.home_title Any restaurant, any meal
+                form(action="").form__group
+                    input(type="text", placeholder="Type your search" required).form__control
+                    button(type="submit").btn.btn__search Search
+                
 -
     const backgroundImg = [
         {
@@ -158,17 +158,17 @@
     section.section-content
         .grid.wide
             .row
-                .col.l-8.m-8
+                .col.l-8.m-8.c-12
                     .section__header
                         p.content__sub-header popular restaurant in town
                         h2.content__header Discover the best cuisine              
-                .col.l-2.l-o-2.m-4
+                .col.l-2.l-o-2.m-4.c-12
                     .discover__icon-control
                         span.ti-arrow-left.icon__discover.icon__control--left
                         span.ti-arrow-right.icon__discover.icon__control--right
             .row 
                 each food in discover
-                    .col.l-2-4.m-4
+                    .col.l-2-4.m-4.c-12
                         .art-gallery
                             .art-gallery-wrap
                                 .art-gallery__img
@@ -180,11 +180,11 @@
     section.section-content
         .grid.wide
             .row
-                .col.l-7.m-12
+                .col.l-7.m-12.c-12
                     .award__img 
                         img(src="./assets/img/award.jpg", alt="Award")
                         img(src="./assets/img/h4-img-8.png", alt="Icon").award__img-icon
-                .col.l-5.m-12
+                .col.l-5.m-12.c-12
                     .section__award
                         p.award__number 01.
                         h2.award__header Award-winning app for delivery         
@@ -194,11 +194,12 @@
     section.section-content
         .grid.wide
             .row
-                .section__header
-                    h2.content__header Popular right now
+                .col.m-12.c-12
+                    .section__header
+                        h2.content__header.content__gallery Popular right now
             .row 
                 each item in food
-                    .col.l-3.m-6
+                    .col.l-3.m-6.c-12
                         .art-gallery
                             .art-gallery-wrap
                                 .art-gallery__img 
@@ -206,11 +207,11 @@
                                 .art-gallery__body
                                     .art-gallery__title= item.title
                                     .art-gallery__description= item.des
-                            
+    .mb-140
     section.section-content.section__app-download
         .grid.wide
             .row
-                .col.l-8
+                .col.l-8.c-12
                     .section__header
                         h2.content__header Hi! Honey...<br> We don't cook today.
                         p.content__sub-header Get the app and choose from 10,000+ restaurants in 70+ cities.
@@ -225,11 +226,11 @@
     section.section-content
         .grid.wide
             .row
-                .col.l-7.m-12
+                .col.l-7.m-12.c-12
                     .award__img 
                         img(src="./assets/img/h4-img-18.jpg", alt="Award")
                         img(src="./assets/img/h4-img-19.png", alt="Icon").award__img-icon
-                .col.l-5.m-12
+                .col.l-5.m-12.c-12
                     ul.section__service
                         each item in service
                             li.service__wrap
@@ -245,7 +246,7 @@
                 h2.content__header.content__blog Latest blog posts
             .row 
                 each item in blogs
-                    .col.l-4.m-6
+                    .col.l-4.m-6.c-12
                         .art-gallery
                             .art-gallery-wrap
                                 .art-gallery__img 
@@ -260,3 +261,12 @@
                             a(href="#").art-gallery__date
                                 time(datetime="2021-08-27")= item.date
 
+    .mb-140
+
+a(href="#home").btn__scroll 
+    span.ti-arrow-up.icon__scroll
+.icon__right.btn-related
+    span.ti-package.icon__right
+
+a(href="#").icon__right.btn-buy
+    span.ti-shopping-cart.icon__right

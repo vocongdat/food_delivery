@@ -1,23 +1,29 @@
+.mb-140 {
+  margin-bottom: 140px;
+}
+
 .home {
   height: 100vh;
   position: relative;
   background: url(../../assets/img/h4-rev-image2.png) no-repeat center right/43%,
     url(../../assets/img/h4-rev-img-1.jpg) no-repeat bottom center/cover;
+
   .home__wrap {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
-    width: 526px;
   }
   .home_title {
     display: flex;
     flex-direction: column;
     margin: 0;
 
-    font-size: 6.5rem;
+    font-size: 6.6rem;
     font-weight: 700;
     line-height: 1.1;
+
+    transform: translateX(8%);
+    animation: handMove 0.4s ease-out 0.1s 1 forwards;
     &::before {
       content: 'explore the whole cities';
 
@@ -26,6 +32,9 @@
       font-weight: 500;
       letter-spacing: 3px;
       line-height: 1;
+
+      transform: translateX(8%);
+      animation: handMove 0.4s ease-out 0s 1 forwards;
     }
   }
   .form__group {
@@ -40,6 +49,10 @@
       font-weight: 700;
 
       border: #ccc solid 1px;
+
+      transform: translateX(8%);
+      animation: handMove 0.4s ease-out 0.2s 1 forwards;
+
       &:focus {
         outline: none;
 
@@ -48,6 +61,9 @@
     }
     .btn__search {
       margin-top: 36px;
+
+      transform: translateX(8%);
+      animation: handMove 0.4s ease-out 0.3s 1 forwards;
     }
   }
 }
