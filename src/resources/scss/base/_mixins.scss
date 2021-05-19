@@ -1,103 +1,29 @@
-a {
-  text-decoration: none;
+@mixin animation-start($delay) {
+  transform: translateX(8%);
+  animation: handMove 0.4s ease-out $delay 1 forwards;
 }
 
-.section-content {
-  padding-top: 140px;
-  .content__header {
-    color: #1d1d1f;
-
-    font-size: 4.6rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
-  .content__sub-header {
-    color: #4c414c;
-
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
+@mixin color-text($background, $color) {
+  background-color: $background;
+  color: $color;
 }
 
-.art-gallery {
-  display: flex;
-  flex-direction: row;
-  margin-top: 64px;
-  text-decoration: none;
-  .art-gallery__date {
-    position: relative;
-    width: 48px;
-    display: flex;
-    time {
-      position: absolute;
-      width: 200px;
-      color: #404040;
-
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-
-      transform: translate(-40%, 840%) rotate(90deg);
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -41px;
-        display: block;
-
-        height: 1px;
-        width: 30px;
-        top: 50%;
-        background-color: #dbdbdb;
-      }
-      &:hover {
-        color: #b2b2b2;
-      }
-    }
+@mixin background-absolute(
+  $prop-first,
+  $val-first,
+  $prop-second,
+  $val-second,
+  $width
+) {
+  position: absolute;
+  #{$prop-first}: $val-first;
+  #{$prop-second}: $val-second;
+  img {
+    width: $width;
   }
 }
 
-.art-gallery-wrap {
-  flex: 1;
-  .art-gallery__img {
-    width: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    img {
-      width: 100%;
-      transition: all ease-in-out 0.3s;
-      transform: scale(1.1);
-      &:hover {
-        transform: scale(1.1) translateX(6px);
-      }
-    }
-    margin-bottom: 38px;
-  }
-  .art-gallery__body {
-    .art-gallery__title {
-      color: #1d1d1f;
-
-      font-size: 2.4rem;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-    .art-gallery__description {
-      margin-bottom: 24px;
-
-      color: #4c414c;
-
-      font-size: 1.8rem;
-      line-height: 1.4;
-    }
-    .art-gallery__link--more {
-      font-size: 1.6rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: #1d1d1f;
-      .art-gallery__icon--more {
-        margin-left: 16px;
-      }
-    }
-  }
+@mixin text-styles($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
 }

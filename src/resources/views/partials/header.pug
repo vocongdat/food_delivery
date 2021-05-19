@@ -1,19 +1,66 @@
 - const navbarList = ['Home', 'Page', 'Portfolio', 'Blog', 'Shop']
+- const sidebarIcon = ['ti-twitter-alt', 'ti-facebook', 'ti-pinterest', 'ti-dribbble', 'ti-linkedin']
+
+mixin navbar(title)
+  li.navbar__menu-item
+        a(href="#").navbar__menu-item-link
+          p.navbar__title= title
+
 nav.navbar
+  //- Navbar Desktop
   .navbar__logo
     img.navbar__logo-img(src='./assets/img/logo-dark-img-1.png' alt='Logo')
   ul.navbar__menu 
     each item, value in navbarList 
-      li.navbar__menu-item
-        a.navbar__menu-item-link
-          p.navbar__title= item
+      +navbar(item)
   ul.navbar__sub
     li.navbar__sub-icon 
       span.ti-search.navbar__sub-icon--search
       span.navbar__sub-title Search
     li.navbar__sub-icon
-      span.navbar__sub--separate 
+      label(for='nav__mobile-input').navbar__sub--separate.nav__bars-btn
         span.navbar__sub--separate--1
         span.navbar__sub--separate--2
         span.navbar__sub--separate--3
 
+
+
+  input#nav__mobile-input.nav__input(type='checkbox' name='' hidden='')
+  label.nav__overlay(for='nav__mobile-input')
+  //- Nav Mobile
+  nav.nav__mobile
+    .logo
+      img(src="./assets/img/logo/logo-mobile-dark.png", alt="Logo")
+    label.nav__mobile-btn--close(for='nav__mobile-input')
+      i.ti-close.navbar__mobile-icon--close
+    
+    ul.nav__mobile-list
+      each item, value in navbarList 
+        +navbar(item)
+  //- Sidebars
+  nav.sidebars
+    
+    label.nav__mobile-btn--close(for='nav__mobile-input')
+      i.ti-close.navbar__mobile-icon--close
+    
+    .sidebars__wrap
+
+      .logo
+        img(src="./assets/img/logo/logo-sticky-img-1.png", alt="Logo")
+      .sidebars__contact
+        .sidebar__title Contact Info
+        ul.sidebar__list 
+          li.sidebar__item 
+            a(href="#") New York +(123) 456 -7890
+          li.sidebar__item 
+            a(href="#") webon@webonexample.com
+          li.sidebar__item 
+            a(href="#")  184 Main Street Victoria 8007
+      .sidebars__social
+        .sidebar__title Follow us on
+        ul.sidebar__list
+          each icon, value in sidebarIcon
+            li.sidebar__item
+              a(href="#")
+                span(class= icon)
+          

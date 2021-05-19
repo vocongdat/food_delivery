@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "watch": "gulp watch",
-    "dev": "build watch gulp "
+    "dev": "build watch gulp ",
+    "scss": "node-sass --watch src/resources/scss/ --output public/assets/css/"
   },
   "keywords": [],
   "author": "",

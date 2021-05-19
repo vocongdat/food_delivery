@@ -2,17 +2,14 @@
   padding: 16px 74px;
   border: none;
 
-  background-color: $black-color;
-  color: $white-color;
+  @include color-text($black-color, $white-color);
 
-  font-size: 1.6rem;
-  font-weight: 500;
+  @include text-styles(1.6rem, 500);
 
   transition: all ease-in 0.2s;
 
   &:hover {
-    background-color: $white-color;
-    color: $black-color;
+    @include color-text($white-color, $black-color);
   }
 }
 
@@ -28,8 +25,7 @@
   width: 44px;
   height: 44px;
 
-  background-color: $white-color;
-  color: $black-color;
+  @include color-text($white-color, $black-color);
 
   text-decoration: none;
 

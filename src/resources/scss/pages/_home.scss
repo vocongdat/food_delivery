@@ -18,23 +18,22 @@
     flex-direction: column;
     margin: 0;
 
-    font-size: 6.6rem;
-    font-weight: 700;
+    @include text-styles(6.6rem, 700);
     line-height: 1.1;
 
-    transform: translateX(8%);
-    animation: handMove 0.4s ease-out 0.1s 1 forwards;
+    @include animation-start(0.1s);
+
     &::before {
       content: 'explore the whole cities';
 
       text-transform: uppercase;
-      font-size: 1.2rem;
-      font-weight: 500;
+
+      @include text-styles(1.2rem, 500);
+
       letter-spacing: 3px;
       line-height: 1;
 
-      transform: translateX(8%);
-      animation: handMove 0.4s ease-out 0s 1 forwards;
+      @include animation-start(0s);
     }
   }
   .form__group {
@@ -45,13 +44,11 @@
 
       color: $text-color;
 
-      font-size: 1.6rem;
-      font-weight: 700;
+      @include text-styles(1.6rem, 700);
 
       border: #ccc solid 1px;
 
-      transform: translateX(8%);
-      animation: handMove 0.4s ease-out 0.2s 1 forwards;
+      @include animation-start(0.2s);
 
       &:focus {
         outline: none;
@@ -62,8 +59,7 @@
     .btn__search {
       margin-top: 36px;
 
-      transform: translateX(8%);
-      animation: handMove 0.4s ease-out 0.3s 1 forwards;
+      @include animation-start(0.3s);
     }
   }
 }
@@ -80,9 +76,9 @@
   .icon__discover {
     color: #acacac;
 
-    font-size: 4rem;
+    @include text-styles(4rem, 400);
+
     line-height: 66px;
-    font-weight: 400;
     padding-left: 8px;
     padding-right: 8px;
     transition: all ease-in-out 0.2s;
@@ -121,15 +117,15 @@
   flex-direction: column;
   height: 100%;
   .award__number {
-    font-size: 1.6rem;
-    font-weight: 700;
+    @include text-styles(1.6rem, 700);
+
     margin-bottom: 4px;
   }
   .award__header {
     color: #1d1d1f;
 
-    font-size: 5.5rem;
-    font-weight: 700;
+    @include text-styles(5.5rem, 700);
+
     line-height: 1.1;
   }
   .award__description {
@@ -137,13 +133,13 @@
 
     color: #4c414c;
 
-    font-size: 1.8rem;
-    font-weight: 500;
+    @include text-styles(1.8rem, 500);
+
     line-height: 1.4;
   }
   .award__link--more {
-    font-size: 1.6rem;
-    font-weight: 700;
+    @include text-styles(1.6rem, 700);
+
     text-decoration: none;
     color: #1d1d1f;
 
@@ -184,54 +180,22 @@
 }
 //- Background
 .rev-inner-3 {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  img {
-    width: 73%;
-  }
+  @include background-absolute(top, 0, right, 100px, 73%);
 }
 .rev-inner-4 {
-  position: absolute;
-  top: 70px;
-  right: -180px;
-
-  img {
-    width: 73%;
-  }
+  @include background-absolute(top, 70px, right, -180px, 73%);
 }
 .rev-inner-5 {
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-
-  img {
-    width: 73%;
-  }
+  @include background-absolute(bottom, 0px, right, 100px, 73%);
 }
 .rev-inner-7 {
-  position: absolute;
-  top: 24px;
-  left: 440px;
-  img {
-    width: 80%;
-  }
+  @include background-absolute(top, 24px, left, 440px, 80%);
 }
 .rev-inner-8 {
-  position: absolute;
-  top: 70px;
-  left: 300px;
-  img {
-    width: 80%;
-  }
+  @include background-absolute(top, 70px, left, 300px, 80%);
 }
 .rev-inner-9 {
-  position: absolute;
-  bottom: -95px;
-  left: 346px;
-  img {
-    width: 100%;
-  }
+  @include background-absolute(bottom, -95px, left, 346px, 100%);
 }
 
 // Service
@@ -254,8 +218,7 @@
 
       color: #1d1d1f;
 
-      font-size: 8.4rem;
-      font-weight: 400;
+      @include text-styles(8.4rem, 400);
     }
   }
   .service__body {

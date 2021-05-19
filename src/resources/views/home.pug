@@ -1,12 +1,5 @@
 
-.home#home
-    .grid.wide
-        .home__wrap.row
-            .col.l-8.m-10
-                h1.home_title Any restaurant, any meal
-                form(action="").form__group
-                    input(type="text", placeholder="Type your search" required).form__control
-                    button(type="submit").btn.btn__search Search
+
                 
 -
     const backgroundImg = [
@@ -154,6 +147,15 @@
     ]
 
 
+.home#home
+    .grid.wide
+        .home__wrap.row
+            .col.l-8.m-10
+                h1.home_title Any restaurant, any meal
+                form(action="").form__group
+                    input(type="text", placeholder="Type your search" required).form__control
+                    button(type="submit").btn.btn__search Search
+
 .content
     section.section-content
         .grid.wide
@@ -187,8 +189,10 @@
                 .col.l-5.m-12.c-12
                     .section__award
                         p.award__number 01.
-                        h2.award__header Award-winning app for delivery         
-                        p.award__description Vivamus lacinia tempus rutrum nulla velit lupus maximus sed nulla quis, gravida sed tellus nibh metus euismod risus curabitur mauris.
+                        h2.award__header 
+                            | Award-winning app for delivery         
+                        p.award__description 
+                            | Vivamus lacinia tempus rutrum nulla velit lupus maximus sed nulla quis, gravida sed tellus nibh metus euismod risus curabitur mauris.
                         a(href="#").award__link--more Read More 
                             span.icon-more.ti-arrow-right
     section.section-content
@@ -208,13 +212,16 @@
                                     .art-gallery__title= item.title
                                     .art-gallery__description= item.des
     .mb-140
+
     section.section-content.section__app-download
         .grid.wide
             .row
                 .col.l-8.c-12
                     .section__header
-                        h2.content__header Hi! Honey...<br> We don't cook today.
-                        p.content__sub-header Get the app and choose from 10,000+ restaurants in 70+ cities.
+                        h2.content__header 
+                            | Hi! Honey...<br> We don't cook today.
+                        p.content__sub-header 
+                            | Get the app and choose from 10,000+ restaurants in 70+ cities.
                         .app-download
                             a(href="#").app__download-link
                                 img(src="./assets/img/app/apple.jpg", alt="App Store").app__download-img
