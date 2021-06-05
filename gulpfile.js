@@ -2,14 +2,14 @@ const { src, dest, parallel, watch, series } = require('gulp');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
-const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 
 const FilesPath = {
   pug: {
-    src: './src/resources/views/layouts/*.pug',
+    src: './src/resources/views/pages/*.pug',
     dest: './public',
+    watch: './src/resources/views/**/*.pug',
   },
   scripts: {
     src: './src/resources/js/*.js',
@@ -32,11 +32,6 @@ const FilesPath = {
 function views() {
   return src(FilesPath.pug.src)
     .pipe(pug({ pretty: true }))
-    .pipe(
-      rename({
-        basename: 'index',
-      })
-    )
     .pipe(dest(FilesPath.pug.dest))
     .pipe(browserSync.stream());
 }
@@ -67,7 +62,7 @@ function assets() {
 
 function watchFiles() {
   browserSync.init({ server: { baseDir: FilesPath.browserSync.baseDir } });
-  watch(FilesPath.pug.src, views);
+  watch(FilesPath.pug.watch, views);
   watch(FilesPath.scripts.src, scripts);
   watch(FilesPath.styles.src, styles);
 }

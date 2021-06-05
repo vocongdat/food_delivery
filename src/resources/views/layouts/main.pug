@@ -14,7 +14,8 @@ html(lang="en")
             header
                 include ../partials/header.pug
             .container
-                include ../home.pug
+                block container
+                    include ../home.pug
             footer
                 include ../partials/footer.pug
             p.copy-right © 2020 
