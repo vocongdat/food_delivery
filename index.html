@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Delivery</title>
+    <link rel="icon" href="https://webon.qodeinteractive.com/wp-content/uploads/2020/11/cropped-favicon-img-1-180x180.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="./assets/fonts/themify-icons/themify-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <nav class="navbar">
+          <div class="navbar__logo"><img class="navbar__logo-img" src="./assets/img/logo-dark-img-1.png" alt="Logo"></div>
+          <ul class="navbar__menu"> 
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                        <p class="navbar__title">Home</p></a></li>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                        <p class="navbar__title">Page</p></a></li>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                        <p class="navbar__title">Portfolio</p></a></li>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                        <p class="navbar__title">Blog</p></a></li>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                        <p class="navbar__title">Shop</p></a></li>
+          </ul>
+          <ul class="navbar__sub">
+            <li class="navbar__sub-icon"> <span class="ti-search navbar__sub-icon--search"></span><span class="navbar__sub-title">Search</span></li>
+            <li class="navbar__sub-icon">
+              <label class="navbar__sub--separate nav__bars-btn" for="nav__mobile-input"><span class="navbar__sub--separate--1"></span><span class="navbar__sub--separate--2"></span><span class="navbar__sub--separate--3"></span></label>
+            </li>
+          </ul>
+          <input class="nav__input" id="nav__mobile-input" type="checkbox" name="" hidden="">
+          <label class="nav__overlay" for="nav__mobile-input"></label>
+          <nav class="nav__mobile">
+            <div class="logo"><img src="./assets/img/logo/logo-mobile-dark.png" alt="Logo"></div>
+            <label class="nav__mobile-btn--close" for="nav__mobile-input"><i class="ti-close navbar__mobile-icon--close"></i></label>
+            <ul class="nav__mobile-list">
+                      <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                          <p class="navbar__title">Home</p></a></li>
+                      <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                          <p class="navbar__title">Page</p></a></li>
+                      <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                          <p class="navbar__title">Portfolio</p></a></li>
+                      <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                          <p class="navbar__title">Blog</p></a></li>
+                      <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="#">
+                          <p class="navbar__title">Shop</p></a></li>
+            </ul>
+          </nav>
+          <nav class="sidebars">
+            <label class="nav__mobile-btn--close" for="nav__mobile-input"><i class="ti-close navbar__mobile-icon--close"></i></label>
+            <div class="sidebars__wrap">
+              <div class="logo"><img src="./assets/img/logo/logo-sticky-img-1.png" alt="Logo"></div>
+              <div class="sidebars__contact">
+                <div class="sidebar__title">Contact Info</div>
+                <ul class="sidebar__list"> 
+                  <li class="sidebar__item"> <a href="#">New York +(123) 456 -7890</a></li>
+                  <li class="sidebar__item"> <a href="#">webon@webonexample.com</a></li>
+                  <li class="sidebar__item"> <a href="#"> 184 Main Street Victoria 8007</a></li>
+                </ul>
+              </div>
+              <div class="sidebars__social">
+                <div class="sidebar__title">Follow us on</div>
+                <ul class="sidebar__list">
+                  <li class="sidebar__item"><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                  <li class="sidebar__item"><a href="#"><span class="ti-facebook"></span></a></li>
+                  <li class="sidebar__item"><a href="#"><span class="ti-pinterest"></span></a></li>
+                  <li class="sidebar__item"><a href="#"><span class="ti-dribbble"></span></a></li>
+                  <li class="sidebar__item"><a href="#"><span class="ti-linkedin"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="home" id="home">
+          <div class="grid wide">
+            <div class="home__wrap row">
+              <div class="col l-8 m-10">
+                <h1 class="home_title">Any restaurant, any meal</h1>
+                <form class="form__group" action="">
+                  <input class="form__control" type="text" placeholder="Type your search" required>
+                  <button class="btn btn__search" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <section class="section-content">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-8 m-8 c-12">
+                  <div class="section__header">
+                    <p class="content__sub-header">popular restaurant in town</p>
+                    <h2 class="content__header">Discover the best cuisine              </h2>
+                  </div>
+                </div>
+                <div class="col l-2 l-o-2 m-4 c-12">
+                  <div class="discover__icon-control"><span class="ti-arrow-left icon__discover icon__control--left"></span><span class="ti-arrow-right icon__discover icon__control--right"></span></div>
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col l-2-4 m-4 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"><a href="#"> <img src="./assets/img/discover/h4-img-2.jpg" alt="Chinese food"></a></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Chinese food</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"><a href="#"> <img src="./assets/img/discover/h4-img-3.jpg" alt="Vegetarian food"></a></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Vegetarian food</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"><a href="#"> <img src="./assets/img/discover/h4-img-4.jpg" alt="Italian food"></a></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Italian food</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"><a href="#"> <img src="./assets/img/discover/h4-img-5.jpg" alt="Beverages"></a></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Beverages</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"><a href="#"> <img src="./assets/img/discover/h4-img-6.jpg" alt="Mexican food"></a></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Mexican food</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-content">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-7 m-12 c-12">
+                  <div class="award__img"> <img src="./assets/img/award.jpg" alt="Award"><img class="award__img-icon" src="./assets/img/h4-img-8.png" alt="Icon"></div>
+                </div>
+                <div class="col l-5 m-12 c-12">
+                  <div class="section__award">
+                    <p class="award__number">01.</p>
+                    <h2 class="award__header">
+                       Award-winning app for delivery         </h2>
+                    <p class="award__description">
+                       Vivamus lacinia tempus rutrum nulla velit lupus maximus sed nulla quis, gravida sed tellus nibh metus euismod risus curabitur mauris.</p><a class="award__link--more" href="#">Read More <span class="icon-more ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-content">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col m-12 c-12">
+                  <div class="section__header">
+                    <h2 class="content__header content__gallery">Popular right now</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-9.jpg" alt="The King Caffe"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">The King Caffe</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-10.jpg" alt="Le Nonne Restaurant"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Le Nonne Restaurant</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-11.jpg" alt="AGY Pasta Away"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">AGY Pasta Away</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-12.jpg" alt="Go Fresh &amp; Healthy"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Go Fresh &amp; Healthy</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-13.jpg" alt="Pizza Restaurant"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Pizza Restaurant</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-14.jpg" alt="Pancakes Recipe"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Pancakes Recipe</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-15.jpg" alt="Ice Cream Flavors"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Ice Cream Flavors</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <img src="./assets/img/popular/h4-img-16.jpg" alt="Delicious Donuts"></div>
+                      <div class="art-gallery__body">
+                        <div class="art-gallery__title">Delicious Donuts</div>
+                        <div class="art-gallery__description">Etiam dictum metus pulvinar vitae hendrerit quis metus</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="mb-140"></div>
+          <section class="section-content section__app-download">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-8 c-12">
+                  <div class="section__header">
+                    <h2 class="content__header">
+                       Hi! Honey...<br> We don't cook today.</h2>
+                    <p class="content__sub-header">
+                       Get the app and choose from 10,000+ restaurants in 70+ cities.</p>
+                    <div class="app-download"><a class="app__download-link" href="#"><img class="app__download-img" src="./assets/img/app/apple.jpg" alt="App Store"></a><a class="app__download-link" href="#"><img class="app__download-img" src="./assets/img/app/google.jpg" alt="Google Play"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rev-inner-3"><img src="./assets/img/app/h4-rev-inner-img-3.png" alt="rev-inner-3"></div>
+            <div class="rev-inner-4"><img src="./assets/img/app/h4-rev-inner-img-4.png" alt="rev-inner-4"></div>
+            <div class="rev-inner-5"><img src="./assets/img/app/h4-rev-inner-img-5.png" alt="rev-inner-5"></div>
+            <div class="rev-inner-7"><img src="./assets/img/app/h4-rev-inner-img-7.png" alt="rev-inner-7"></div>
+            <div class="rev-inner-8"><img src="./assets/img/app/h4-rev-inner-img-8.png" alt="rev-inner-8"></div>
+            <div class="rev-inner-9"><img src="./assets/img/app/h4-rev-inner-img-9.png" alt="rev-inner-9"></div>
+          </section>
+          <section class="section-content">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-7 m-12 c-12">
+                  <div class="award__img"> <img src="./assets/img/h4-img-18.jpg" alt="Award"><img class="award__img-icon" src="./assets/img/h4-img-19.png" alt="Icon"></div>
+                </div>
+                <div class="col l-5 m-12 c-12">
+                  <ul class="section__service">
+                    <li class="service__wrap"><a href="#"><span class="ti-video-clapper service__icon"></span></a>
+                      <div class="service__body"><a href="#">
+                          <h4 class="service__title">Capitalize on Custom</h4></a>
+                        <p class="service__des">Morbi posuere varius eros, sed convallis condimentum pretium non sed metus.</p>
+                      </div>
+                    </li>
+                    <li class="service__wrap"><a href="#"><span class="ti-layout-tab-window service__icon"></span></a>
+                      <div class="service__body"><a href="#">
+                          <h4 class="service__title">eCommerce Trends</h4></a>
+                        <p class="service__des">Quisque vitae ornare libero varius metus sollicitudin a tortor pharetra amet nisl.</p>
+                      </div>
+                    </li>
+                    <li class="service__wrap"><a href="#"><span class="ti-layout-slider service__icon"></span></a>
+                      <div class="service__body"><a href="#">
+                          <h4 class="service__title">On-Demand Platforms</h4></a>
+                        <p class="service__des">Donec pretium commodo ante commodo sem volutpat eget vestibulum id mollis.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-content">
+            <div class="grid wide">
+              <div class="section__header">
+                <h2 class="content__header content__blog">Latest blog posts</h2>
+              </div>
+              <div class="row"> 
+                <div class="col l-4 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <a href="#"> <img src="./assets/img/blog/blog-1.jpg" alt="Our master chef"></a></div>
+                      <div class="art-gallery__body"><a href="#">
+                          <div class="art-gallery__title">Our master chef</div></a>
+                        <div class="art-gallery__description">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</div><a class="art-gallery__link--more" href="#">Read More <span class="art-gallery__icon--more ti-arrow-right"></span></a>
+                      </div>
+                    </div><a class="art-gallery__date" href="#">
+                      <time datetime="2021-08-27">AUGUST 27, 2021</time></a>
+                  </div>
+                </div>
+                <div class="col l-4 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <a href="#"> <img src="./assets/img/blog/blog-2.jpg" alt="Preparing food"></a></div>
+                      <div class="art-gallery__body"><a href="#">
+                          <div class="art-gallery__title">Preparing food</div></a>
+                        <div class="art-gallery__description">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</div><a class="art-gallery__link--more" href="#">Read More <span class="art-gallery__icon--more ti-arrow-right"></span></a>
+                      </div>
+                    </div><a class="art-gallery__date" href="#">
+                      <time datetime="2021-08-27">AUGUST 27, 2021</time></a>
+                  </div>
+                </div>
+                <div class="col l-4 m-6 c-12">
+                  <div class="art-gallery">
+                    <div class="art-gallery-wrap">
+                      <div class="art-gallery__img"> <a href="#"> <img src="./assets/img/blog/blog-3.jpg" alt="Serve more people"></a></div>
+                      <div class="art-gallery__body"><a href="#">
+                          <div class="art-gallery__title">Serve more people</div></a>
+                        <div class="art-gallery__description">Eu mea audiam equidem, has ad dolore officiis. No zril solet minimum sit.</div><a class="art-gallery__link--more" href="#">Read More <span class="art-gallery__icon--more ti-arrow-right"></span></a>
+                      </div>
+                    </div><a class="art-gallery__date" href="#">
+                      <time datetime="2021-08-27">AUGUST 27, 2021</time></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="mb-140"></div>
+        </div><a class="btn__scroll" href="#home"> <span class="ti-arrow-up icon__scroll"></span></a>
+        <div class="icon__right btn-related"><span class="ti-package icon__right"></span></div><a class="icon__right btn-buy" href="#"><span class="ti-shopping-cart icon__right"></span></a>
+      </div>
+      <footer>
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4">
+              <h3 class="footer__slogan">We do what we love, and we love what we do.</h3><a href="#"><img src="./assets/img/logo-footer.png" alt="Logo Footer"></a>
+            </div>
+            <div class="col l-4"> 
+              <div class="footer__title">Office in New York</div>
+              <ul class="footer__contact"> 
+                <li class="footer__contact-body">
+                  <div class="contact-location"><a href="#"> 105 Lincoln Avenue</a><a href="#">Bronx, NY 10454, USA </a></div>
+                </li>
+                <li class="footer__contact-body">
+                  <div class="contact-phone"><a href="#">+ (123) 124-567-8901</a><a href="#">+ (123) 124-667-8901</a></div>
+                </li>
+                <li class="footer__contact-body"> 
+                  <div class="contact-website">    <a href="#">webon1@webonexample.com</a><a href="#">webon2@webonexample.com</a></div>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-4">
+              <div class="footer__title">Newsletter</div>
+              <p>Submit to our newsletter & subscribe to our newsletter to be on the up and up</p>
+              <form class="form__group" action="">
+                <input class="form__control" type="email" name="Email" placeholder="mail@address.com">
+                <button class="btn btn__subscribe" type="submit">Subscribe<span class="ti-arrow-right"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <p class="copy-right">© 2020 <a href="#">Qode Interactive, All Rights Reserved</a></p>
+    </div>
+  </body>
+</html>
